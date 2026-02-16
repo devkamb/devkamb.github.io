@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashanth Kambalapally — Portfolio</title>
+    <title>Prashanth Kambalapally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ambient grid background -->
+<div class="grid-bg" aria-hidden="true"></div>
+
 <!-- nav -->
 <nav>
     <div class="nav-inner">
-        <a href="#" class="nav-logo">PK</a>
+        <a href="#" class="nav-logo"><span class="logo-bracket">{</span>PK<span class="logo-bracket">}</span></a>
         <div class="nav-links">
-            <a href="#projects">Projects</a>
+            <a href="#work">Work</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+            <a href="https://github.com/nani2245q" target="_blank" class="nav-gh">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
         </div>
     </div>
 </nav>
@@ -26,153 +35,195 @@
         <div class="hero-photo">
             <img src="profile.jpg" alt="Prashanth Kambalapally" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
         </div>
-        <h1>Prashanth Kambalapally</h1>
-        <p class="tagline">Data Analyst &amp; Full-Stack Developer</p>
+        <p class="hero-greeting mono">Hi, I'm</p>
+        <h1>Prashanth <span class="gradient-text">Kambalapally</span></h1>
+        <div class="hero-terminal mono">
+            <span class="prompt">$</span>
+            <span class="typed" id="typed-text"></span><span class="cursor">_</span>
+        </div>
         <p class="bio">
-            I build data pipelines, analytics dashboards, and full-stack applications.
-            Experienced with Python, SQL, Java, and JavaScript across the entire stack &mdash;
-            from ETL and statistical analysis to REST APIs and interactive frontends.
+            I build data pipelines that transform raw events into business insights,
+            full-stack applications that serve real users, and research tools that
+            push the boundaries of ML translation. Python, SQL, Java, JavaScript &mdash;
+            whatever the problem needs.
         </p>
         <div class="hero-links">
-            <a href="https://github.com/nani2245q" target="_blank" class="btn btn-outline">GitHub</a>
-            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-outline">LinkedIn</a>
-            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#work" class="btn btn-primary">See my work <span class="arrow">&darr;</span></a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-ghost">LinkedIn</a>
+            <a href="mailto:YOUR-EMAIL@example.com" class="btn btn-ghost">Email</a>
         </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
     </div>
 </section>
 
 <!-- projects -->
-<section id="projects">
-    <h2>Projects</h2>
+<section id="work">
+    <div class="section-label mono">
+        <span class="label-line"></span>
+        <span>Featured Work</span>
+    </div>
 
-    <div class="project-grid">
-
-        <!-- 1. ecommerce platform -->
-        <div class="project-card">
-            <div class="card-header">
+    <!-- project 1 -->
+    <article class="project reveal" data-accent="blue">
+        <div class="project-num mono">01</div>
+        <div class="project-body">
+            <div class="project-top">
                 <h3>E-Commerce Platform</h3>
-                <span class="card-badge live">Live</span>
+                <div class="project-status live">
+                    <span class="status-dot"></span> Deployed
+                </div>
             </div>
-            <p>Full-stack ecommerce app with integrated user behavior tracking,
-               conversion funnel analysis, marketing attribution, and a
-               real-time analytics dashboard.</p>
+            <p>Full-stack ecommerce with <strong>real-time behavior analytics</strong> baked in.
+               Every page view, cart action, and checkout gets tracked and piped into a
+               conversion funnel, marketing attribution engine, and revenue dashboard.
+               Not just a store &mdash; a data-generating machine.</p>
+            <div class="project-arch mono">
+                Express API &rarr; MongoDB &rarr; Behavior SDK &rarr; Analytics Dashboard
+            </div>
             <div class="tags">
                 <span>Node.js</span><span>Express</span><span>MongoDB</span>
-                <span>Chart.js</span><span>JWT</span>
+                <span>Chart.js</span><span>JWT Auth</span><span>REST API</span>
             </div>
-            <div class="card-links">
-                <a href="https://ecommerce-platform.onrender.com" target="_blank">Live Demo</a>
-                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-platform" target="_blank">Source</a>
+            <div class="project-links">
+                <a href="https://ecommerce-platform.onrender.com" target="_blank" class="link-demo">
+                    Live Demo
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-platform" target="_blank" class="link-source">Source Code</a>
             </div>
         </div>
+    </article>
 
-        <!-- 2. fitzone -->
-        <div class="project-card">
-            <div class="card-header">
+    <!-- project 2 -->
+    <article class="project reveal" data-accent="green">
+        <div class="project-num mono">02</div>
+        <div class="project-body">
+            <div class="project-top">
                 <h3>FitZone Fitness App</h3>
-                <span class="card-badge live">Live</span>
+                <div class="project-status live">
+                    <span class="status-dot"></span> Deployed
+                </div>
             </div>
-            <p>Fitness tracking application with workout logging, exercise library
-               management, daily activity tracking, and an analytics dashboard.
-               Role-based access with admin exercise CRUD.</p>
+            <p>Spring Boot application with <strong>role-based access control</strong>,
+               workout logging, exercise library management, and daily activity tracking.
+               Admins get full CRUD over the exercise catalog. Users get a personal
+               analytics dashboard with weekly trends.</p>
+            <div class="project-arch mono">
+                Spring Security + JWT &rarr; JPA/Hibernate &rarr; H2/MySQL &rarr; Chart.js Frontend
+            </div>
             <div class="tags">
-                <span>Java</span><span>Spring Boot</span><span>MySQL</span>
-                <span>Spring Security</span><span>JWT</span><span>Docker</span>
+                <span>Java 17</span><span>Spring Boot</span><span>Spring Security</span>
+                <span>MySQL</span><span>Docker</span><span>JWT</span>
             </div>
-            <div class="card-links">
-                <a href="https://fitzone-fitness-app.onrender.com" target="_blank">Live Demo</a>
-                <a href="https://github.com/nani2245q/Projects/tree/main/fitzone-fitness-app" target="_blank">Source</a>
+            <div class="project-links">
+                <a href="https://fitzone-fitness-app.onrender.com" target="_blank" class="link-demo">
+                    Live Demo
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/fitzone-fitness-app" target="_blank" class="link-source">Source Code</a>
             </div>
         </div>
+    </article>
 
-        <!-- 3. analytics pipeline -->
-        <div class="project-card">
-            <div class="card-header">
+    <!-- project 3 -->
+    <article class="project reveal" data-accent="purple">
+        <div class="project-num mono">03</div>
+        <div class="project-body">
+            <div class="project-top">
                 <h3>E-Commerce Analytics Pipeline</h3>
-                <span class="card-badge live">Live</span>
+                <div class="project-status live">
+                    <span class="status-dot"></span> Deployed
+                </div>
             </div>
-            <p>End-to-end data pipeline: ETL data generation, dbt-style SQL
-               transformations (staging &rarr; marts &rarr; analytics), and a
-               Streamlit dashboard with marketing attribution, cohort retention,
-               RFM segmentation, LTV analysis, and A/B testing.</p>
+            <p>End-to-end data pipeline: synthetic data generation, dbt-style SQL
+               transformations through <strong>staging &rarr; marts &rarr; analytics</strong>
+               layers, and a Streamlit dashboard covering marketing attribution,
+               cohort retention, RFM segmentation, customer LTV, and
+               <strong>A/B test analysis with statistical significance testing</strong>.</p>
+            <div class="project-arch mono">
+                ETL (Python) &rarr; SQLite Warehouse &rarr; SQL Models &rarr; Streamlit + Plotly
+            </div>
             <div class="tags">
                 <span>Python</span><span>SQL</span><span>Streamlit</span>
                 <span>Plotly</span><span>pandas</span><span>A/B Testing</span>
+                <span>ETL</span><span>Data Modeling</span>
             </div>
-            <div class="card-links">
-                <a href="https://YOUR-STREAMLIT-URL.streamlit.app" target="_blank">Live Demo</a>
-                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-analytics-pipeline" target="_blank">Source</a>
+            <div class="project-links">
+                <a href="https://YOUR-STREAMLIT-URL.streamlit.app" target="_blank" class="link-demo">
+                    Live Demo
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-analytics-pipeline" target="_blank" class="link-source">Source Code</a>
             </div>
         </div>
+    </article>
 
-        <!-- 4. llm translation -->
-        <div class="project-card">
-            <div class="card-header">
+    <!-- project 4 -->
+    <article class="project reveal" data-accent="orange">
+        <div class="project-num mono">04</div>
+        <div class="project-body">
+            <div class="project-top">
                 <h3>LLM PyTorch-to-JAX Translation</h3>
-                <span class="card-badge">Research</span>
+                <div class="project-status research">Research</div>
             </div>
-            <p>Capstone research analyzing LLM-generated translations from PyTorch
-               GPU kernels to JAX/XLA. Custom AQS quality metric, benchmarking
-               pipeline for 212 kernels, statistical analysis (ANOVA, t-test),
-               and publication-ready visualizations.</p>
+            <p>Capstone research evaluating how well LLMs translate PyTorch GPU kernels
+               to JAX/XLA. Built a custom <strong>Aggregate Quality Score (AQS)</strong>
+               metric weighting syntactic, semantic, precision, and performance factors.
+               Benchmarked <strong>212 GPU kernels</strong> across 15 categories with
+               ANOVA, t-tests, and regression analysis.</p>
+            <div class="project-arch mono">
+                212 Kernels &rarr; LLM Translation &rarr; AQS Scoring &rarr; Statistical Analysis &rarr; Visualizations
+            </div>
             <div class="tags">
-                <span>Python</span><span>SciPy</span><span>Matplotlib</span>
-                <span>NumPy</span><span>pandas</span><span>pytest</span>
+                <span>Python</span><span>SciPy</span><span>NumPy</span>
+                <span>Matplotlib</span><span>pandas</span><span>pytest</span>
+                <span>Statistical Analysis</span>
             </div>
-            <div class="card-links">
-                <a href="https://github.com/nani2245q/Projects/tree/main/llm-pytorch-jax-translation" target="_blank">Source &amp; Paper</a>
+            <div class="project-links">
+                <a href="https://github.com/nani2245q/Projects/tree/main/llm-pytorch-jax-translation" target="_blank" class="link-source">Source &amp; Paper</a>
             </div>
         </div>
-
-    </div>
+    </article>
 </section>
 
 <!-- skills -->
 <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-group">
-            <h4>Languages</h4>
-            <div class="tags">
-                <span>Python</span><span>Java</span><span>JavaScript</span>
-                <span>SQL</span><span>HTML/CSS</span>
-            </div>
+    <div class="section-label mono">
+        <span class="label-line"></span>
+        <span>Technical Skills</span>
+    </div>
+
+    <div class="skills-columns">
+        <div class="skill-col reveal">
+            <h4 class="mono">Languages</h4>
+            <ul class="skill-list">
+                <li><span class="skill-name">Python</span><span class="skill-bar" style="--w:95%"></span></li>
+                <li><span class="skill-name">SQL</span><span class="skill-bar" style="--w:90%"></span></li>
+                <li><span class="skill-name">Java</span><span class="skill-bar" style="--w:85%"></span></li>
+                <li><span class="skill-name">JavaScript</span><span class="skill-bar" style="--w:85%"></span></li>
+                <li><span class="skill-name">HTML / CSS</span><span class="skill-bar" style="--w:80%"></span></li>
+            </ul>
         </div>
-        <div class="skill-group">
-            <h4>Data &amp; Analytics</h4>
+        <div class="skill-col reveal">
+            <h4 class="mono">Data &amp; Analytics</h4>
             <div class="tags">
                 <span>pandas</span><span>NumPy</span><span>SciPy</span>
-                <span>Matplotlib</span><span>Plotly</span><span>Streamlit</span>
-                <span>A/B Testing</span><span>Statistical Analysis</span>
+                <span>Matplotlib</span><span>Seaborn</span><span>Plotly</span>
+                <span>Streamlit</span><span>A/B Testing</span>
+                <span>Statistical Analysis</span><span>ETL Pipelines</span>
+                <span>dbt-style Modeling</span><span>Data Warehousing</span>
             </div>
         </div>
-        <div class="skill-group">
-            <h4>Frameworks &amp; Libraries</h4>
+        <div class="skill-col reveal">
+            <h4 class="mono">Frameworks &amp; Infra</h4>
             <div class="tags">
                 <span>Spring Boot</span><span>Express.js</span><span>Node.js</span>
-                <span>Chart.js</span><span>Hibernate</span>
-            </div>
-        </div>
-        <div class="skill-group">
-            <h4>Databases</h4>
-            <div class="tags">
+                <span>Spring Security</span><span>Hibernate</span><span>Chart.js</span>
                 <span>MongoDB</span><span>MySQL</span><span>SQLite</span>
-                <span>H2</span>
-            </div>
-        </div>
-        <div class="skill-group">
-            <h4>Tools &amp; Platforms</h4>
-            <div class="tags">
-                <span>Git</span><span>Docker</span><span>Render</span>
-                <span>GitHub Actions</span><span>Maven</span><span>npm</span>
-                <span>REST APIs</span><span>JWT</span>
-            </div>
-        </div>
-        <div class="skill-group">
-            <h4>Data Engineering</h4>
-            <div class="tags">
-                <span>ETL Pipelines</span><span>dbt (SQL models)</span>
-                <span>Data Warehousing</span><span>Data Modeling</span>
+                <span>Docker</span><span>Render</span><span>Git</span>
+                <span>Maven</span><span>REST APIs</span><span>JWT</span>
             </div>
         </div>
     </div>
@@ -180,18 +231,78 @@
 
 <!-- contact -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Interested in working together? Reach out.</p>
-    <div class="contact-links">
-        <a href="mailto:YOUR-EMAIL@example.com" class="btn btn-primary">Email me</a>
-        <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-outline">LinkedIn</a>
-        <a href="https://github.com/nani2245q" target="_blank" class="btn btn-outline">GitHub</a>
+    <div class="contact-box reveal">
+        <p class="contact-pre mono">What's next?</p>
+        <h2>Let's build something.</h2>
+        <p class="contact-desc">
+            I'm looking for data analyst and full-stack developer roles.
+            If you think I'd be a good fit, I'd love to hear from you.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:YOUR-EMAIL@example.com" class="btn btn-primary btn-lg">
+                Say hello
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-ghost">LinkedIn</a>
+            <a href="https://github.com/nani2245q" target="_blank" class="btn btn-ghost">GitHub</a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>Prashanth Kambalapally &middot; 2025</p>
+    <p class="mono">Designed & built by Prashanth Kambalapally</p>
 </footer>
 
+<script>
+// typing animation
+const phrases = [
+    'building data pipelines & dashboards',
+    'analyzing A/B tests for significance',
+    'writing SQL models: staging > marts > analytics',
+    'deploying full-stack apps with Docker',
+    'translating PyTorch kernels to JAX',
+];
+let pi = 0, ci = 0, deleting = false;
+const el = document.getElementById('typed-text');
+
+function type() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+        el.textContent = phrase.substring(0, ci + 1);
+        ci++;
+        if (ci === phrase.length) {
+            deleting = true;
+            setTimeout(type, 2000);
+            return;
+        }
+        setTimeout(type, 50 + Math.random() * 40);
+    } else {
+        el.textContent = phrase.substring(0, ci - 1);
+        ci--;
+        if (ci === 0) {
+            deleting = false;
+            pi = (pi + 1) % phrases.length;
+            setTimeout(type, 400);
+            return;
+        }
+        setTimeout(type, 25);
+    }
+}
+type();
+
+// scroll reveal
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// skill bar animation
+const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('bars-visible');
+    });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skill-col').forEach(el => barObserver.observe(el));
+</script>
 </body>
 </html>
