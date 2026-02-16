@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashanth Kambalapally — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- nav -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">PK</a>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- hero -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-photo">
+            <img src="profile.jpg" alt="Prashanth Kambalapally" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+        </div>
+        <h1>Prashanth Kambalapally</h1>
+        <p class="tagline">Data Analyst &amp; Full-Stack Developer</p>
+        <p class="bio">
+            I build data pipelines, analytics dashboards, and full-stack applications.
+            Experienced with Python, SQL, Java, and JavaScript across the entire stack &mdash;
+            from ETL and statistical analysis to REST APIs and interactive frontends.
+        </p>
+        <div class="hero-links">
+            <a href="https://github.com/nani2245q" target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-outline">LinkedIn</a>
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <!-- 1. ecommerce platform -->
+        <div class="project-card">
+            <div class="card-header">
+                <h3>E-Commerce Platform</h3>
+                <span class="card-badge live">Live</span>
+            </div>
+            <p>Full-stack ecommerce app with integrated user behavior tracking,
+               conversion funnel analysis, marketing attribution, and a
+               real-time analytics dashboard.</p>
+            <div class="tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span>
+                <span>Chart.js</span><span>JWT</span>
+            </div>
+            <div class="card-links">
+                <a href="https://ecommerce-platform.onrender.com" target="_blank">Live Demo</a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-platform" target="_blank">Source</a>
+            </div>
+        </div>
+
+        <!-- 2. fitzone -->
+        <div class="project-card">
+            <div class="card-header">
+                <h3>FitZone Fitness App</h3>
+                <span class="card-badge live">Live</span>
+            </div>
+            <p>Fitness tracking application with workout logging, exercise library
+               management, daily activity tracking, and an analytics dashboard.
+               Role-based access with admin exercise CRUD.</p>
+            <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                <span>Spring Security</span><span>JWT</span><span>Docker</span>
+            </div>
+            <div class="card-links">
+                <a href="https://fitzone-fitness-app.onrender.com" target="_blank">Live Demo</a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/fitzone-fitness-app" target="_blank">Source</a>
+            </div>
+        </div>
+
+        <!-- 3. analytics pipeline -->
+        <div class="project-card">
+            <div class="card-header">
+                <h3>E-Commerce Analytics Pipeline</h3>
+                <span class="card-badge live">Live</span>
+            </div>
+            <p>End-to-end data pipeline: ETL data generation, dbt-style SQL
+               transformations (staging &rarr; marts &rarr; analytics), and a
+               Streamlit dashboard with marketing attribution, cohort retention,
+               RFM segmentation, LTV analysis, and A/B testing.</p>
+            <div class="tags">
+                <span>Python</span><span>SQL</span><span>Streamlit</span>
+                <span>Plotly</span><span>pandas</span><span>A/B Testing</span>
+            </div>
+            <div class="card-links">
+                <a href="https://YOUR-STREAMLIT-URL.streamlit.app" target="_blank">Live Demo</a>
+                <a href="https://github.com/nani2245q/Projects/tree/main/ecommerce-analytics-pipeline" target="_blank">Source</a>
+            </div>
+        </div>
+
+        <!-- 4. llm translation -->
+        <div class="project-card">
+            <div class="card-header">
+                <h3>LLM PyTorch-to-JAX Translation</h3>
+                <span class="card-badge">Research</span>
+            </div>
+            <p>Capstone research analyzing LLM-generated translations from PyTorch
+               GPU kernels to JAX/XLA. Custom AQS quality metric, benchmarking
+               pipeline for 212 kernels, statistical analysis (ANOVA, t-test),
+               and publication-ready visualizations.</p>
+            <div class="tags">
+                <span>Python</span><span>SciPy</span><span>Matplotlib</span>
+                <span>NumPy</span><span>pandas</span><span>pytest</span>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/nani2245q/Projects/tree/main/llm-pytorch-jax-translation" target="_blank">Source &amp; Paper</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="tags">
+                <span>Python</span><span>Java</span><span>JavaScript</span>
+                <span>SQL</span><span>HTML/CSS</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h4>Data &amp; Analytics</h4>
+            <div class="tags">
+                <span>pandas</span><span>NumPy</span><span>SciPy</span>
+                <span>Matplotlib</span><span>Plotly</span><span>Streamlit</span>
+                <span>A/B Testing</span><span>Statistical Analysis</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h4>Frameworks &amp; Libraries</h4>
+            <div class="tags">
+                <span>Spring Boot</span><span>Express.js</span><span>Node.js</span>
+                <span>Chart.js</span><span>Hibernate</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h4>Databases</h4>
+            <div class="tags">
+                <span>MongoDB</span><span>MySQL</span><span>SQLite</span>
+                <span>H2</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h4>Tools &amp; Platforms</h4>
+            <div class="tags">
+                <span>Git</span><span>Docker</span><span>Render</span>
+                <span>GitHub Actions</span><span>Maven</span><span>npm</span>
+                <span>REST APIs</span><span>JWT</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h4>Data Engineering</h4>
+            <div class="tags">
+                <span>ETL Pipelines</span><span>dbt (SQL models)</span>
+                <span>Data Warehousing</span><span>Data Modeling</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Interested in working together? Reach out.</p>
+    <div class="contact-links">
+        <a href="mailto:YOUR-EMAIL@example.com" class="btn btn-primary">Email me</a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/nani2245q" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    <p>Prashanth Kambalapally &middot; 2025</p>
+</footer>
+
+</body>
+</html>
