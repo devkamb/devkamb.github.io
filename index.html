@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=automation-focus">
 </head>
 <body>
 
@@ -38,8 +38,8 @@
             <span class="line outline">Kambalapally</span>
         </h1>
         <p class="hero-desc">
-            I build validation tools, data systems, and full-stack products &mdash;
-            with a focus on Python automation, Linux workflows, and reliable software.
+            I build Python automation, Linux validation workflows, and
+            controller-style simulation tools for reliable software.
         </p>
         <div class="hero-actions">
             <a href="#work" class="pill">View projects</a>
@@ -50,20 +50,20 @@
     <div class="hero-col-right">
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-num" data-target="7">0</span>
-                <span class="stat-label">Projects<br>built</span>
-            </div>
-            <div class="stat">
-                <span class="stat-num" data-target="212">0</span>
-                <span class="stat-label">GPU kernels<br>benchmarked</span>
-            </div>
-            <div class="stat">
                 <span class="stat-num" data-target="3">0</span>
                 <span class="stat-label">Automation<br>projects</span>
             </div>
             <div class="stat">
-                <span class="stat-num" data-target="5">0</span>
-                <span class="stat-label">Languages<br>shipped</span>
+                <span class="stat-num" data-target="39">0</span>
+                <span class="stat-label">Regression<br>steps</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="60">0</span>
+                <span class="stat-label">Simulated<br>frames</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="2">0</span>
+                <span class="stat-label">Core<br>languages</span>
             </div>
         </div>
         <div class="hero-photo-wrap">
@@ -77,8 +77,8 @@
 <!-- ============================================ -->
 <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; Streamlit &mdash; Docker &mdash; Test Automation &mdash; ETL &mdash; Data Modeling &mdash; </span>
-        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; Streamlit &mdash; Docker &mdash; Test Automation &mdash; ETL &mdash; Data Modeling &mdash; </span>
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; Test Automation &mdash; Regression Testing &mdash; Structured Logs &mdash; Failure Analysis &mdash; Sockets &mdash; Makefiles &mdash; Git &mdash; </span>
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; Test Automation &mdash; Regression Testing &mdash; Structured Logs &mdash; Failure Analysis &mdash; Sockets &mdash; Makefiles &mdash; Git &mdash; </span>
     </div>
 </div>
 
@@ -87,11 +87,11 @@
 <!-- ============================================ -->
 <section id="work">
     <div class="section-head">
-        <h2>Selected Work</h2>
-        <p class="mono">Production apps, research, and engineering systems</p>
+        <h2>Embedded &amp; Test Automation</h2>
+        <p class="mono">Python automation, controller validation, networking, and Linux systems</p>
     </div>
 
-    <div class="bento">
+    <div class="bento legacy-work" hidden>
 
         <!-- BIG card — analytics pipeline -->
         <a href="https://ecommerce-analytics-pipeline.streamlit.app/" target="_blank" class="bento-card big purple">
@@ -156,7 +156,7 @@
 
     </div>
 
-    <div class="section-head embedded-head">
+    <div class="section-head embedded-head" hidden>
         <h2>Embedded &amp; Test Automation</h2>
         <p class="mono">Python automation, controller validation, networking, and Linux systems</p>
     </div>
@@ -221,20 +221,20 @@
         </div>
         <div class="about-right">
             <p class="about-lead">
-                I like building practical software end-to-end: from Python
-                automation and Linux validation workflows, to data pipelines
-                and full-stack apps that put insights in front of people.
+                I like building practical engineering tools: Python automation
+                for repeatable validation, Linux workflows for debugging, and
+                small simulators that make controller behavior easier to test.
             </p>
             <div class="about-cols">
                 <div>
-                    <h4 class="mono">Data & Analytics</h4>
+                    <h4 class="mono">Automation &amp; Validation</h4>
                     <ul>
-                        <li>ETL pipelines & data modeling</li>
-                        <li>A/B testing & stat. significance</li>
-                        <li>Cohort analysis & retention</li>
-                        <li>RFM segmentation & LTV</li>
-                        <li>Marketing attribution</li>
-                        <li>pandas, NumPy, SciPy, Plotly</li>
+                        <li>Python system-level test automation</li>
+                        <li>Regression testing and repeated execution</li>
+                        <li>Structured logs and failure analysis</li>
+                        <li>Controller state-machine validation</li>
+                        <li>UDP/TCP and CAN-style simulation</li>
+                        <li>Test documentation and run scripts</li>
                     </ul>
                 </div>
                 <div>
@@ -261,7 +261,7 @@
     <div class="contact-inner">
         <h2>Let's<br>work together.</h2>
         <div class="contact-right">
-            <p>Looking for software engineering, test automation, data, and full-stack roles.
+            <p>Looking for software engineering and test automation roles.
                If my work resonates, let's talk.</p>
             <div class="contact-links">
                 <a href="mailto:kambalapallyprashanth26@gmail.com" class="pill big">kambalapallyprashanth26@gmail.com &rarr;</a>
