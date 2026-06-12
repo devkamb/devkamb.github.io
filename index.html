@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,14 +32,14 @@
 <!-- ============================================ -->
 <section id="hero">
     <div class="hero-col-left">
-        <div class="hero-eyebrow mono">Data Analyst / Full-Stack Developer / Researcher</div>
+        <div class="hero-eyebrow mono">Software Engineer / Test Automation / Full-Stack Developer</div>
         <h1>
             <span class="line">Prashanth</span>
             <span class="line outline">Kambalapally</span>
         </h1>
         <p class="hero-desc">
-            I turn raw data into decisions &mdash; building ETL pipelines,
-            analytics dashboards, full-stack apps, and research tools.
+            I build validation tools, data systems, and full-stack products &mdash;
+            with a focus on Python automation, Linux workflows, and reliable software.
         </p>
         <div class="hero-actions">
             <a href="#work" class="pill">View projects</a>
@@ -49,16 +50,16 @@
     <div class="hero-col-right">
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-num" data-target="4">0</span>
-                <span class="stat-label">Projects<br>deployed</span>
+                <span class="stat-num" data-target="7">0</span>
+                <span class="stat-label">Projects<br>built</span>
             </div>
             <div class="stat">
                 <span class="stat-num" data-target="212">0</span>
                 <span class="stat-label">GPU kernels<br>benchmarked</span>
             </div>
             <div class="stat">
-                <span class="stat-num" data-target="7">0</span>
-                <span class="stat-label">Analytics<br>dashboards</span>
+                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-label">Automation<br>projects</span>
             </div>
             <div class="stat">
                 <span class="stat-num" data-target="5">0</span>
@@ -76,8 +77,8 @@
 <!-- ============================================ -->
 <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-        <span>Python &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; MongoDB &mdash; Streamlit &mdash; Plotly &mdash; Docker &mdash; A/B Testing &mdash; ETL &mdash; Data Modeling &mdash; </span>
-        <span>Python &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; MongoDB &mdash; Streamlit &mdash; Plotly &mdash; Docker &mdash; A/B Testing &mdash; ETL &mdash; Data Modeling &mdash; </span>
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; Streamlit &mdash; Docker &mdash; Test Automation &mdash; ETL &mdash; Data Modeling &mdash; </span>
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; SQL &mdash; Java &mdash; JavaScript &mdash; Spring Boot &mdash; Node.js &mdash; Streamlit &mdash; Docker &mdash; Test Automation &mdash; ETL &mdash; Data Modeling &mdash; </span>
     </div>
 </div>
 
@@ -87,7 +88,7 @@
 <section id="work">
     <div class="section-head">
         <h2>Selected Work</h2>
-        <p class="mono">Real projects, live in production</p>
+        <p class="mono">Production apps, research, and engineering systems</p>
     </div>
 
     <div class="bento">
@@ -155,6 +156,54 @@
 
     </div>
 
+    <div class="section-head embedded-head">
+        <h2>Embedded &amp; Test Automation</h2>
+        <p class="mono">Python automation, controller validation, networking, and Linux systems</p>
+    </div>
+
+    <div class="bento embedded-bento">
+
+        <a href="https://github.com/devkamb/Projects/tree/main/rfa-controller-test-automation" target="_blank" class="bento-card big green">
+            <div class="card-top">
+                <span class="card-num mono">05</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>System-Level Controller Test Automation</h3>
+                <p>Python automation framework for validating controller-style software behavior across repeated regression runs, with structured logs and failure analysis.</p>
+                <div class="card-tech mono">Python / Linux / Bash / Regression Testing / Failure Analysis</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <a href="https://github.com/devkamb/Projects/tree/main/vehicle-network-simulator" target="_blank" class="bento-card blue">
+            <div class="card-top">
+                <span class="card-num mono">06</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>Vehicle Network Communication Simulator</h3>
+                <p>UDP/TCP simulator using CAN-style message frames to validate packet structure, timing behavior, checksum errors, and diagnostics.</p>
+                <div class="card-tech mono">Python / UDP / TCP/IP / CAN Concepts / Sockets</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <a href="https://github.com/devkamb/Projects/tree/main/cpp-controller-log-monitor" target="_blank" class="bento-card orange">
+            <div class="card-top">
+                <span class="card-num mono">07</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>C++ Controller Log Monitor</h3>
+                <p>Linux command-line tool that parses controller logs, summarizes warnings and errors, detects repeated failure signatures, and returns automation-friendly exit codes.</p>
+                <div class="card-tech mono">C++17 / Linux / Makefiles / Debugging / Log Analysis</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+    </div>
+
     <!-- source links row -->
     <div class="source-row mono">
         <span>All source code &rarr;</span>
@@ -172,9 +221,9 @@
         </div>
         <div class="about-right">
             <p class="about-lead">
-                I like building things end-to-end: from extracting raw data
-                and modeling it in SQL, to shipping the frontend that puts
-                insights in front of people.
+                I like building practical software end-to-end: from Python
+                automation and Linux validation workflows, to data pipelines
+                and full-stack apps that put insights in front of people.
             </p>
             <div class="about-cols">
                 <div>
@@ -191,12 +240,13 @@
                 <div>
                     <h4 class="mono">Engineering</h4>
                     <ul>
-                        <li>Python, Java, JavaScript, SQL</li>
+                        <li>Python, C++, Java, JavaScript, SQL</li>
+                        <li>Test automation, validation workflows</li>
+                        <li>Linux, Bash, command-line tools</li>
+                        <li>UDP/TCP, REST APIs, CAN fundamentals</li>
                         <li>Spring Boot, Express, Node.js</li>
                         <li>MongoDB, MySQL, SQLite</li>
                         <li>Docker, Render, Git</li>
-                        <li>REST APIs, JWT auth</li>
-                        <li>Streamlit, Chart.js</li>
                     </ul>
                 </div>
             </div>
@@ -211,7 +261,7 @@
     <div class="contact-inner">
         <h2>Let's<br>work together.</h2>
         <div class="contact-right">
-            <p>Looking for data analyst and full-stack developer roles.
+            <p>Looking for software engineering, test automation, data, and full-stack roles.
                If my work resonates, let's talk.</p>
             <div class="contact-links">
                 <a href="mailto:kambalapallyprashanth26@gmail.com" class="pill big">kambalapallyprashanth26@gmail.com &rarr;</a>
