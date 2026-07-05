@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashanth Kambalapally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css?v=automation-focus">
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+
+<!-- side nav -->
+<nav>
+    <a href="#" class="nav-logo">P<span>K</span></a>
+    <div class="nav-links">
+        <a href="#work" data-label="Work">W</a>
+        <a href="#about" data-label="About">A</a>
+        <a href="#contact" data-label="Contact">C</a>
+    </div>
+    <a href="https://github.com/devkamb" target="_blank" class="nav-gh" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+    </a>
+</nav>
+
+<!-- ============================================ -->
+<!-- HERO — massive type, left aligned, editorial -->
+<!-- ============================================ -->
+<section id="hero">
+    <div class="hero-col-left">
+        <div class="hero-eyebrow mono">Software Engineer / Test Automation / Full-Stack Developer</div>
+        <h1>
+            <span class="line">Prashanth</span>
+            <span class="line outline">Kambalapally</span>
+        </h1>
+        <p class="hero-desc">
+            I build Python automation, Linux validation workflows, and
+            controller-style simulation tools for reliable software.
+        </p>
+        <div class="hero-actions">
+            <a href="#work" class="pill">View projects</a>
+            <a href="https://www.linkedin.com/in/prashanth-kambalapally-53678425b/" target="_blank" class="pill ghost">LinkedIn</a>
+            <a href="mailto:kambalapallyprashanth26@gmail.com" class="pill ghost">Email</a>
+        </div>
+    </div>
+    <div class="hero-col-right">
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-label">Automation<br>projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="39">0</span>
+                <span class="stat-label">Regression<br>steps</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="60">0</span>
+                <span class="stat-label">Simulated<br>frames</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="2">0</span>
+                <span class="stat-label">Core<br>languages</span>
+            </div>
+        </div>
+        <div class="hero-photo-wrap">
+            <img src="profile.jpg" alt="" class="hero-photo" onerror="this.parentElement.style.display='none'">
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- MARQUEE — moving text strip -->
+<!-- ============================================ -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; Test Automation &mdash; Regression Testing &mdash; Structured Logs &mdash; Failure Analysis &mdash; Sockets &mdash; Makefiles &mdash; Git &mdash; </span>
+        <span>Python &mdash; Linux &mdash; Bash &mdash; C++ &mdash; UDP/TCP &mdash; CAN Fundamentals &mdash; Test Automation &mdash; Regression Testing &mdash; Structured Logs &mdash; Failure Analysis &mdash; Sockets &mdash; Makefiles &mdash; Git &mdash; </span>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!-- WORK — bento grid, mixed sizes              -->
+<!-- ============================================ -->
+<section id="work">
+    <div class="section-head">
+        <h2>Embedded &amp; Test Automation</h2>
+        <p class="mono">Python automation, controller validation, networking, and Linux systems</p>
+    </div>
+
+    <div class="bento legacy-work" hidden>
+
+        <!-- BIG card — analytics pipeline -->
+        <a href="https://ecommerce-analytics-pipeline.streamlit.app/" target="_blank" class="bento-card big purple">
+            <div class="card-top">
+                <span class="card-num mono">03</span>
+                <span class="card-status live mono"><span class="dot"></span>Live</span>
+            </div>
+            <div class="card-bottom">
+                <h3>E-Commerce Analytics Pipeline</h3>
+                <p>ETL &rarr; dbt-style SQL models &rarr; Streamlit dashboard.
+                   Marketing attribution, cohort retention, RFM segmentation,
+                   customer LTV, and A/B testing with statistical significance.</p>
+                <div class="card-tech mono">Python / SQL / Streamlit / Plotly / pandas / A/B Testing</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <!-- tall card — ecommerce -->
+        <a href="https://ecommerce-platform-g4ki.onrender.com/" target="_blank" class="bento-card tall blue">
+            <div class="card-top">
+                <span class="card-num mono">01</span>
+                <span class="card-status live mono"><span class="dot"></span>Live</span>
+            </div>
+            <div class="card-bottom">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack store with real-time behavior tracking,
+                   conversion funnels, and a revenue analytics dashboard.</p>
+                <div class="card-tech mono">Node.js / Express / MongoDB / Chart.js</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <!-- regular card — fitzone -->
+        <a href="https://projects-h4x4.onrender.com/" target="_blank" class="bento-card green">
+            <div class="card-top">
+                <span class="card-num mono">02</span>
+                <span class="card-status live mono"><span class="dot"></span>Live</span>
+            </div>
+            <div class="card-bottom">
+                <h3>FitZone Fitness App</h3>
+                <p>Spring Boot with role-based access, workout logging,
+                   exercise CRUD, and personal analytics.</p>
+                <div class="card-tech mono">Java / Spring Boot / MySQL / Docker</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <!-- regular card — research -->
+        <a href="https://seniord.cs.iastate.edu/2025-Dec-12/" target="_blank" class="bento-card orange">
+            <div class="card-top">
+                <span class="card-num mono">04</span>
+                <span class="card-status research mono">Research</span>
+            </div>
+            <div class="card-bottom">
+                <h3>LLM PyTorch &rarr; JAX</h3>
+                <p>Iowa State senior design: custom AQS metric benchmarking
+                   212 GPU kernel translations with ANOVA, t-tests, and regression.</p>
+                <div class="card-tech mono">Python / SciPy / NumPy / Matplotlib</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+    </div>
+
+    <div class="section-head embedded-head" hidden>
+        <h2>Embedded &amp; Test Automation</h2>
+        <p class="mono">Python automation, controller validation, networking, and Linux systems</p>
+    </div>
+
+    <div class="bento embedded-bento">
+
+        <a href="https://github.com/devkamb/Projects/tree/main/controller-test-automation-framework" target="_blank" class="bento-card big green">
+            <div class="card-top">
+                <span class="card-num mono">05</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>System-Level Controller Test Automation</h3>
+                <p>Python automation framework for validating controller-style software behavior across repeated regression runs, with structured logs and failure analysis.</p>
+                <div class="card-tech mono">Python / Linux / Bash / Regression Testing / Failure Analysis</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <a href="https://github.com/devkamb/Projects/tree/main/vehicle-network-simulator" target="_blank" class="bento-card blue">
+            <div class="card-top">
+                <span class="card-num mono">06</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>Vehicle Network Communication Simulator</h3>
+                <p>UDP/TCP simulator using CAN-style message frames to validate packet structure, timing behavior, checksum errors, and diagnostics.</p>
+                <div class="card-tech mono">Python / UDP / TCP/IP / CAN Concepts / Sockets</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+        <a href="https://github.com/devkamb/Projects/tree/main/cpp-controller-log-monitor" target="_blank" class="bento-card orange">
+            <div class="card-top">
+                <span class="card-num mono">07</span>
+                <span class="card-status mono">Source</span>
+            </div>
+            <div class="card-bottom">
+                <h3>C++ Controller Log Monitor</h3>
+                <p>Linux command-line tool that parses controller logs, summarizes warnings and errors, detects repeated failure signatures, and returns automation-friendly exit codes.</p>
+                <div class="card-tech mono">C++17 / Linux / Makefiles / Debugging / Log Analysis</div>
+            </div>
+            <div class="card-arrow">&nearr;</div>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ============================================ -->
+<!-- ABOUT — two column editorial                -->
+<!-- ============================================ -->
+<section id="about">
+    <div class="about-grid">
+        <div class="about-left">
+            <h2>About</h2>
+        </div>
+        <div class="about-right">
+            <p class="about-lead">
+                I like building practical engineering tools: Python automation
+                for repeatable validation, Linux workflows for debugging, and
+                small simulators that make controller behavior easier to test.
+            </p>
+            <div class="about-cols">
+                <div>
+                    <h4 class="mono">Automation &amp; Validation</h4>
+                    <ul>
+                        <li>Python system-level test automation</li>
+                        <li>Regression testing and repeated execution</li>
+                        <li>Structured logs and failure analysis</li>
+                        <li>Controller state-machine validation</li>
+                        <li>UDP/TCP and CAN-style simulation</li>
+                        <li>Test documentation and run scripts</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mono">Engineering</h4>
+                    <ul>
+                        <li>Python, C++, Java, JavaScript, SQL</li>
+                        <li>Test automation, validation workflows</li>
+                        <li>Linux, Bash, command-line tools</li>
+                        <li>UDP/TCP, REST APIs, CAN fundamentals</li>
+                        <li>Spring Boot, Express, Node.js</li>
+                        <li>MongoDB, MySQL, SQLite</li>
+                        <li>Docker, Render, Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- CONTACT — full-width band                   -->
+<!-- ============================================ -->
+<section id="contact">
+    <div class="contact-inner">
+        <h2>Let's<br>work together.</h2>
+        <div class="contact-right">
+            <p>Looking for software engineering and test automation roles.
+               If my work resonates, let's talk.</p>
+            <div class="contact-links">
+                <a href="mailto:kambalapallyprashanth26@gmail.com" class="pill big">kambalapallyprashanth26@gmail.com &rarr;</a>
+                <a href="https://www.linkedin.com/in/prashanth-kambalapally-53678425b/" target="_blank" class="pill ghost">LinkedIn</a>
+                <a href="https://github.com/devkamb" target="_blank" class="pill ghost">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mono">
+    Prashanth Kambalapally &mdash; 2025
+</footer>
+
+<script>
+// counter animation for hero stats
+function animateCounters() {
+    document.querySelectorAll('.stat-num').forEach(el => {
+        const target = +el.dataset.target;
+        const duration = 1600;
+        const start = performance.now();
+        function tick(now) {
+            const p = Math.min((now - start) / duration, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(ease * target);
+            if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+    });
+}
+
+// trigger counters when hero is visible
+const heroObs = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) { animateCounters(); heroObs.disconnect(); }
+}, { threshold: 0.3 });
+heroObs.observe(document.getElementById('hero'));
+
+// tilt effect on bento cards
+document.querySelectorAll('.bento-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(600px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) scale(1.01)`;
+        card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+    });
+});
+</script>
+</body>
+</html>
