@@ -1,0 +1,4 @@
+export const tokens={color:{ink:'#1f2b3d',muted:'#6b788c',accent:'#315fca',surface:'#ffffff'},space:{sm:'8px',md:'16px',lg:'24px'}};
+export function button(label,{variant='primary',disabled=false}={}){const element=document.createElement('button');element.textContent=label;element.className=`button ${variant}`;element.disabled=disabled;element.type='button';return element;}
+export function statusPill(label,status='neutral'){const element=document.createElement('span');element.textContent=label;element.className=`status status-${status}`;element.setAttribute('role','status');return element;}
+export function virtualSlice(items,scrollTop,rowHeight,viewportHeight){const start=Math.max(0,Math.floor(scrollTop/rowHeight)-2);const end=Math.min(items.length,Math.ceil((scrollTop+viewportHeight)/rowHeight)+2);return {start,end,items:items.slice(start,end)};}
