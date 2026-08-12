@@ -32,14 +32,14 @@
 <!-- ============================================ -->
 <section id="hero">
     <div class="hero-col-left">
-        <div class="hero-eyebrow mono">Software Engineer / Product Systems / Full-Stack Developer</div>
+        <div class="hero-eyebrow mono">Software Engineer / Systems / Backend / Product Engineering</div>
         <h1>
             <span class="line">Prashanth</span>
             <span class="line outline">Kambalapally</span>
         </h1>
         <p class="hero-desc">
-            I build useful product experiences and the systems behind them —
-            from interactive interfaces to reliable backend workflows.
+            I build reliable software across systems, backend services, data
+            infrastructure, and AI — from core algorithms to useful product experiences.
         </p>
         <div class="hero-actions">
             <a href="#work" class="pill">View projects</a>
@@ -50,19 +50,19 @@
     <div class="hero-col-right">
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-num" data-target="6">0</span>
+                <span class="stat-num">6</span>
                 <span class="stat-label">Portfolio<br>projects</span>
             </div>
             <div class="stat">
-                <span class="stat-num" data-target="3">0</span>
-                <span class="stat-label">Product<br>surfaces</span>
+                <span class="stat-num">3</span>
+                <span class="stat-label">Engineering<br>themes</span>
             </div>
             <div class="stat">
-                <span class="stat-num" data-target="2">0</span>
+                <span class="stat-num">2</span>
                 <span class="stat-label">Systems<br>layers</span>
             </div>
             <div class="stat">
-                <span class="stat-num" data-target="4">0</span>
+                <span class="stat-num">6</span>
                 <span class="stat-label">Core<br>languages</span>
             </div>
         </div>
@@ -88,13 +88,13 @@
 <section id="work">
     <div class="section-head">
         <h2>Selected Work</h2>
-        <p class="mono">Product systems, interactive interfaces, automation, and reliable software</p>
+        <p class="mono">Systems, backend services, algorithms, interfaces, and applied AI</p>
     </div>
 
     <div class="bento product-work">
-        <a href="projects/collaborative-canvas/" class="bento-card big purple">
-            <div class="card-top"><span class="card-num mono">01</span><span class="card-status mono">Interactive</span></div>
-            <div class="card-bottom"><h3>Collaborative Canvas</h3><p>A focused canvas for turning notes into a shared visual plan, with optimistic operations, undo/redo, zoom, and presence cues.</p><div class="card-tech mono">TypeScript / Canvas / State Operations / UX</div></div><div class="card-arrow">&nearr;</div>
+        <a href="https://github.com/devkamb" target="_blank" rel="noreferrer" class="bento-card big purple">
+            <div class="card-top"><span class="card-num mono">01</span><span class="card-status mono">Systems</span></div>
+            <div class="card-bottom"><h3>Distributed Object Store</h3><p>Small replicated storage system exploring consistent-hash placement, checksums, concurrent access, failure reads, and repair.</p><div class="card-tech mono">Python / Distributed Systems / Concurrency / Recovery</div></div><div class="card-arrow">&nearr;</div>
         </a>
         <a href="https://github.com/devkamb/transaction-decision-platform" target="_blank" rel="noreferrer" class="bento-card blue">
             <div class="card-top"><span class="card-num mono">02</span><span class="card-status mono">Backend</span></div>
@@ -109,7 +109,7 @@
             <div class="card-bottom"><h3>Information Retrieval Engine</h3><p>Inverted-index search engine with deterministic ranking, parallel index construction, and a Unix-friendly CLI.</p><div class="card-tech mono">Python / Algorithms / Retrieval / Parallelism</div></div><div class="card-arrow">&nearr;</div>
         </a>
         <a href="https://github.com/devkamb/accessible-workspace" target="_blank" rel="noreferrer" class="bento-card green">
-            <div class="card-top"><span class="card-num mono">06</span><span class="card-status mono">Accessible</span></div>
+            <div class="card-top"><span class="card-num mono">05</span><span class="card-status mono">Accessible</span></div>
             <div class="card-bottom"><h3>Accessible Workspace</h3><p>Keyboard-friendly TypeScript workspace with semantic structure, live status updates, and responsive interaction.</p><div class="card-tech mono">TypeScript / Accessibility / UI / API Boundaries</div></div><div class="card-arrow">&nearr;</div>
         </a>
     </div>
@@ -239,9 +239,9 @@
         </div>
         <div class="about-right">
             <p class="about-lead">
-                I like building practical engineering tools: interfaces that
-                feel immediate, backend workflows that are easy to reason about,
-                and automation that makes reliability repeatable.
+                I like building practical engineering tools: systems that are
+                reliable under failure, backend workflows that are easy to reason
+                about, and interfaces that make complex work feel clear.
             </p>
             <div class="about-cols">
                 <div>
@@ -279,7 +279,8 @@
     <div class="contact-inner">
         <h2>Let's<br>work together.</h2>
         <div class="contact-right">
-            <p>Looking for software engineering and test automation roles.
+            <p>Looking for software engineering opportunities in systems,
+               backend infrastructure, cloud, and data-intensive software.
                If my work resonates, let's talk.</p>
             <div class="contact-links">
                 <a href="mailto:kambalapallyprashanth26@gmail.com" class="pill big">kambalapallyprashanth26@gmail.com &rarr;</a>
@@ -295,28 +296,6 @@
 </footer>
 
 <script>
-// counter animation for hero stats
-function animateCounters() {
-    document.querySelectorAll('.stat-num').forEach(el => {
-        const target = +el.dataset.target;
-        const duration = 1600;
-        const start = performance.now();
-        function tick(now) {
-            const p = Math.min((now - start) / duration, 1);
-            const ease = 1 - Math.pow(1 - p, 3);
-            el.textContent = Math.round(ease * target);
-            if (p < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-    });
-}
-
-// trigger counters when hero is visible
-const heroObs = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) { animateCounters(); heroObs.disconnect(); }
-}, { threshold: 0.3 });
-heroObs.observe(document.getElementById('hero'));
-
 // tilt effect on bento cards
 document.querySelectorAll('.bento-card').forEach(card => {
     card.addEventListener('mousemove', e => {
